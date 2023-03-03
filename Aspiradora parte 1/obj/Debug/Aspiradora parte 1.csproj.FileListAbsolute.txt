@@ -9,3 +9,14 @@ C:\Users\diana\OneDrive\Escritorio\8vo semestre\Inteligencia Artificial\Aspirado
 C:\Users\diana\OneDrive\Escritorio\8vo semestre\Inteligencia Artificial\Aspiradora parte 1\Aspiradora parte 1\obj\Debug\Aspiradora parte 1.csproj.CoreCompileInputs.cache
 C:\Users\diana\OneDrive\Escritorio\8vo semestre\Inteligencia Artificial\Aspiradora parte 1\Aspiradora parte 1\obj\Debug\Aspiradora parte 1.exe
 C:\Users\diana\OneDrive\Escritorio\8vo semestre\Inteligencia Artificial\Aspiradora parte 1\Aspiradora parte 1\obj\Debug\Aspiradora parte 1.pdb
+C:\Users\diana\OneDrive\Escritorio\8vo semestre\Inteligencia Artificial\Aspiradora-parte1\Aspiradora parte 1\bin\Debug\Aspiradora parte 1.exe.config
+C:\Users\diana\OneDrive\Escritorio\8vo semestre\Inteligencia Artificial\Aspiradora-parte1\Aspiradora parte 1\bin\Debug\Aspiradora parte 1.exe
+C:\Users\diana\OneDrive\Escritorio\8vo semestre\Inteligencia Artificial\Aspiradora-parte1\Aspiradora parte 1\bin\Debug\Aspiradora parte 1.pdb
+C:\Users\diana\OneDrive\Escritorio\8vo semestre\Inteligencia Artificial\Aspiradora-parte1\Aspiradora parte 1\obj\Debug\Aspiradora parte 1.csproj.AssemblyReference.cache
+C:\Users\diana\OneDrive\Escritorio\8vo semestre\Inteligencia Artificial\Aspiradora-parte1\Aspiradora parte 1\obj\Debug\Aspiradora parte 1.csproj.SuggestedBindingRedirects.cache
+C:\Users\diana\OneDrive\Escritorio\8vo semestre\Inteligencia Artificial\Aspiradora-parte1\Aspiradora parte 1\obj\Debug\Aspiradora_parte_1.Form1.resources
+C:\Users\diana\OneDrive\Escritorio\8vo semestre\Inteligencia Artificial\Aspiradora-parte1\Aspiradora parte 1\obj\Debug\Aspiradora_parte_1.Properties.Resources.resources
+C:\Users\diana\OneDrive\Escritorio\8vo semestre\Inteligencia Artificial\Aspiradora-parte1\Aspiradora parte 1\obj\Debug\Aspiradora parte 1.csproj.GenerateResource.cache
+C:\Users\diana\OneDrive\Escritorio\8vo semestre\Inteligencia Artificial\Aspiradora-parte1\Aspiradora parte 1\obj\Debug\Aspiradora parte 1.csproj.CoreCompileInputs.cache
+C:\Users\diana\OneDrive\Escritorio\8vo semestre\Inteligencia Artificial\Aspiradora-parte1\Aspiradora parte 1\obj\Debug\Aspiradora parte 1.exe
+C:\Users\diana\OneDrive\Escritorio\8vo semestre\Inteligencia Artificial\Aspiradora-parte1\Aspiradora parte 1\obj\Debug\Aspiradora parte 1.pdb

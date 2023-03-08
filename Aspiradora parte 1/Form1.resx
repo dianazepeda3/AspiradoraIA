@@ -9786,7 +9786,7 @@
   <data name="picBox_Aspiradora1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAgAAAAIACAYAAAD0eNT6AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        vQAADr0BR/uQrQAAvzdJREFUeF7tnQWYW1X6xm+SoTJJpsXdpdRGk5F6oS1QdFnK4roUd6e4LlZaSkuL
+        vAAADrwBlbxySQAAvzdJREFUeF7tnQWYW1X6xm+SoTJJpsXdpdRGk5F6oS1QdFnK4roUd6e4LlZaSkuL
         WykUXRwWZ3EvTnWkLSwufxYWuf/3PXO+cBumdJLczES+93l+z70jOffmynm/445KpVKpVCqVSqVSqVQq
         lUqlUqlUKpVKpVKpVCqVSqVSqVQqlUqlUqlUKpVKpVKpVCqVSqVSqVQqlUqlUqlUKpVKpVKpVCqVSqVS
         qVQqlUqlUqlUKpVKpVKpVCqVSqVSqVQqlUqlUqlUKpVKpVKpVCqVSqVSqVQqlUqlUqlUKpVKpVKpVCqV
@@ -21092,4 +21092,7 @@
         UpDj/D/oFlUe1WO50gAAAABJRU5ErkJggg==
 </value>
   </data>
+  <metadata name="timer1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
 </root>

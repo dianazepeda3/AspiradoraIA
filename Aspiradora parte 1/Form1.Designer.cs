@@ -43,12 +43,13 @@
             this.label1 = new System.Windows.Forms.Label();
             this.btnValores = new System.Windows.Forms.Button();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.lblBasura = new System.Windows.Forms.Label();
             this.lblCaract = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.btnIniciar = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.label5 = new System.Windows.Forms.Label();
-            this.lblBasura = new System.Windows.Forms.Label();
+            this.lblEstadoA = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picBox_Basura1)).BeginInit();
@@ -194,12 +195,23 @@
             // 
             this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.panel5.Controls.Add(this.lblBasura);
+            this.panel5.Controls.Add(this.lblEstadoA);
             this.panel5.Controls.Add(this.lblCaract);
+            this.panel5.Controls.Add(this.label7);
             this.panel5.Controls.Add(this.label2);
             this.panel5.Location = new System.Drawing.Point(38, 365);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(447, 71);
+            this.panel5.Size = new System.Drawing.Size(447, 144);
             this.panel5.TabIndex = 5;
+            // 
+            // lblBasura
+            // 
+            this.lblBasura.Location = new System.Drawing.Point(273, 43);
+            this.lblBasura.Name = "lblBasura";
+            this.lblBasura.Size = new System.Drawing.Size(147, 16);
+            this.lblBasura.TabIndex = 3;
+            this.lblBasura.Text = "--";
+            this.lblBasura.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lblCaract
             // 
@@ -238,30 +250,31 @@
             // 
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
-            // label5
+            // lblEstadoA
             // 
-            this.label5.Location = new System.Drawing.Point(12, 9);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(408, 28);
-            this.label5.TabIndex = 7;
-            this.label5.Text = "label5";
+            this.lblEstadoA.Location = new System.Drawing.Point(33, 112);
+            this.lblEstadoA.Name = "lblEstadoA";
+            this.lblEstadoA.Size = new System.Drawing.Size(387, 22);
+            this.lblEstadoA.TabIndex = 2;
+            this.lblEstadoA.Text = "--";
+            this.lblEstadoA.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // lblBasura
+            // label7
             // 
-            this.lblBasura.Location = new System.Drawing.Point(273, 43);
-            this.lblBasura.Name = "lblBasura";
-            this.lblBasura.Size = new System.Drawing.Size(147, 16);
-            this.lblBasura.TabIndex = 3;
-            this.lblBasura.Text = "--";
-            this.lblBasura.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(150, 78);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(144, 15);
+            this.label7.TabIndex = 0;
+            this.label7.Text = "Estado de Aspiradora";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.ClientSize = new System.Drawing.Size(1000, 461);
-            this.Controls.Add(this.label5);
+            this.ClientSize = new System.Drawing.Size(1000, 531);
             this.Controls.Add(this.btnIniciar);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.btnValores);
@@ -306,8 +319,9 @@
         private System.Windows.Forms.Label lblCaract;
         private System.Windows.Forms.Button btnIniciar;
         private System.Windows.Forms.Timer timer1;
-        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label lblBasura;
+        private System.Windows.Forms.Label lblEstadoA;
+        private System.Windows.Forms.Label label7;
     }
 }
 

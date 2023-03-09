@@ -15,7 +15,8 @@ namespace Aspiradora_parte_1
     public partial class Form1 : Form
     {
         //int num = 0;
-        int basura, aspiradora;
+        int basura, aspiradora, costo=0;
+        string url = "C:\\Users\\diana\\OneDrive\\Escritorio\\8vo semestre\\Inteligencia Artificial\\Aspiradora-parte1\\img\\";
         Random random = new Random();
         
         public Form1()
@@ -25,26 +26,7 @@ namespace Aspiradora_parte_1
             evaluar_aspiradora();
             evaluar_basura();
         }
-        // public void wait (int seconds)
-        // {
-        //     var timer1 = new System.Windows.Forms.Timer();
-        //     if (seconds == 0 || seconds < 0) return;
-
-        //     timer1.Interval = seconds;
-        //     timer1.Enabled = true;
-        //     timer1.Start();
-
-        //     timer1.Tick += (s, e) =>
-        //     {
-        //         timer1.Enabled = false;
-        //         timer1.Stop();
-        //     };
-
-        //     while (timer1.Enabled)
-        //     {
-        //         Application.DoEvents();
-        //     }
-        // }
+       
         public void reset_val()
         {
             /* Basura
@@ -59,57 +41,68 @@ namespace Aspiradora_parte_1
              */
             
             aspiradora = random.Next(0, 2);
-            basura = random.Next(0, 4);
+            basura = random.Next(1, 4);
         }
 
         public void evaluar_aspiradora()
-        {
-            Thread.Sleep(1000);
+        {            
             if (aspiradora == 0)
             {
-                picBox_Aspiradora1.Visible = true;
-                picBox_Aspiradora2.Visible = false;
+                picBox_Aspiradora1.Image = Image.FromFile(url+"aspiradora.png");
+                picBox_Aspiradora2.Image = null;
                 lblCaract.Text = "Aspiradora en habitación 1";
 
             }
             else
             {
-                picBox_Aspiradora1.Visible = false;
-                picBox_Aspiradora2.Visible = true;
+                picBox_Aspiradora2.Image = Image.FromFile(url+"aspiradora.png");
+                picBox_Aspiradora1.Image = null;
                 lblCaract.Text = "Aspiradora en habitación 2";
             }
+            Thread.Sleep(2000);
+        }
+        public void limpio(Boolean i)
+        {
+            if (i) { 
+                picBox_Basura1.Image = Image.FromFile(url + "clean.png");
+            }
+            else
+            {
+                picBox_Basura2.Image = Image.FromFile(url + "clean.png");
+            }
+            Thread.Sleep(2000);
         }
 
         public void evaluar_basura()
         {
-            Thread.Sleep(1000);
             switch (basura)
             {
                 case 0:
-                    picBox_Basura1.Visible = false;
-                    picBox_Basura2.Visible = false;
-                    lblBasura.Text = "- Habitaciones Limpias";
+                    picBox_Basura1.Image = null;
+                    picBox_Basura2.Image = null;
+                    lblBasura.Text = "Habitaciones Limpias";
                     break;
 
-                case 1:
-                    picBox_Basura1.Visible = true;
-                    picBox_Basura2.Visible = false;
-                    lblBasura.Text = " - Habitación 1 Sucia";
+                case 1:                 
+                    picBox_Basura1.Image = Image.FromFile(url+"basura.png");
+                    picBox_Basura2.Image = null;
+                    lblBasura.Text = "Habitación 1 Sucia";
                     break;
 
-                case 2:
-                    picBox_Basura1.Visible = false;
-                    picBox_Basura2.Visible = true;
-                    lblBasura.Text = " - Habitación 2 Sucia";
+                case 2: 
+                    picBox_Basura2.Image = Image.FromFile(url + "basura.png");
+                    picBox_Basura1.Image = null;
+                    lblBasura.Text = "Habitación 2 Sucia";
                     break;
 
-                case 3:
-                    picBox_Basura1.Visible = true;
-                    picBox_Basura2.Visible = true;
-                    lblBasura.Text = " - Habitaciones Sucias";
+                case 3:                    
+                    picBox_Basura1.Image = Image.FromFile(url + "basura.png");
+                    picBox_Basura2.Image = Image.FromFile(url + "basura.png");
+                    lblBasura.Text = "Habitaciones Sucias";
                     break;
             }
-            Thread.Sleep(1000);
+            
+            Thread.Sleep(2000);
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -122,90 +115,76 @@ namespace Aspiradora_parte_1
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-            //wait(500);
-            //timer1.Start(); // Funcion iniciar Timer
-            while(basura != 0)
-            {
-                if (aspiradora == 0)
-                {
-                    switch (basura)
-                    {
-                        case 0:
-                           // timer1.Stop();
-                            btnValores.Enabled = true;
-                            label5.Text = "aspiradora 0 caso 0";
-                            break;
-                        case 1:
-                            basura = 0;
-                            label5.Text = "basura aspiradora 0 caso 1";
-                            evaluar_basura();
-                            break;
-                        case 2:
-                            aspiradora = 1;
-                            label5.Text = "aspiradora - aspiradora 0 caso 2";
-                            evaluar_aspiradora();
-                            Thread.Sleep(1000);
-                            basura = 0;
-                            label5.Text = "basura - aspiradora 0 caso 2";
-                            evaluar_basura();
-                            break;
-                        case 3:
-                            basura = 2;
-                            label5.Text = "basura - aspiradora 0 caso 3";
-                            evaluar_basura();
-                            Thread.Sleep(1000);
-                            aspiradora = 1;
-                            label5.Text = "aspiradora - aspiradora 0 caso 3";
-                            evaluar_aspiradora();
-                            break;
-                    }
-
-                }
-                else
-                {
-                    switch (basura)
-                    {
-                        case 0:
-                            //timer1.Stop();
-                            btnValores.Enabled = true;
-                            label5.Text = "aspiradora 1 caso 0";
-                            break;
-                        case 1:
-                            aspiradora = 0;
-                            label5.Text = "aspiradora - aspiradora 1 caso 1";
-                            evaluar_aspiradora();
-                            Thread.Sleep(1000);
-                            basura = 0;
-                            label5.Text = "basura - aspiradora 1 caso 1";
-                            evaluar_basura();
-                            break;
-                        case 2:
-                            basura = 0;
-                            label5.Text = "basura - aspiradora 1 caso 2";
-                            evaluar_basura();
-
-                            break;
-                        case 3:
-                            basura = 1;
-                            label5.Text = "basura - aspiradora 1 caso 3";
-                            evaluar_basura();
-                            Thread.Sleep(1000);
-                            aspiradora = 0;
-                            label5.Text = "aspiradora - aspiradora 1 caso 3";
-                            evaluar_aspiradora();
-
-                            break;
-                    }
-                    Thread.Sleep(2000);
-
-
-                }
-            }
-
+            timer1.Start(); // Funcion iniciar Timer            
         }
 
         private async void timer1_Tick(object sender, EventArgs e)
-        {                        
+        {
+            if (aspiradora == 0)
+            {
+                switch (basura)
+                {
+                    case 0:
+                        timer1.Stop();
+                        btnValores.Enabled = true;
+                        lblEstadoA.Text = "Nada     -    Costo: " + costo;
+                        break;
+                    case 1:
+                        basura = 0;
+                        costo += 2;
+                        lblEstadoA.Text = "Aspirando +2     -     Costo: " + costo;
+                        limpio(true);
+                        //evaluar_basura();
+                        break;
+                    case 2:
+                        aspiradora = 1;
+                        costo++;
+                        lblEstadoA.Text = "Moviendo +1     -    Costo: " + costo;
+                        evaluar_aspiradora();
+                        break;
+                    case 3:
+                        basura = 2;
+                        costo += 2;
+                        lblEstadoA.Text = "Aspirando +2     -    Costo: " + costo;
+                        limpio(true);
+                        //evaluar_basura();
+                        break;
+                }
+            }
+            else
+            {
+                switch (basura)
+                {
+                    case 0:
+                        timer1.Stop();
+                        btnValores.Enabled = true;
+                        lblEstadoA.Text = "Nada     -     Costo: " + costo;
+                        break;
+                    case 1:
+                        aspiradora = 0;
+                        costo++;
+                        lblEstadoA.Text = "Moviendo +1     -     Costo: " + costo;
+                        evaluar_aspiradora();
+                        break;
+                    case 2:
+                        basura = 0;
+                        costo += 2;
+                        lblEstadoA.Text = "Aspirando +2     -     Costo: " + costo;
+                        limpio(false);
+                        //evaluar_basura();
+                        break;
+                    case 3:
+                        basura = 1;
+                        costo += 2;
+                        lblEstadoA.Text = "Aspirando +2     -     Costo: " + costo;
+                        limpio(false);
+                        //evaluar_basura();                       
+                        break;
+                }
+
+
+            }
+
             
 
         }

@@ -183,7 +183,7 @@
             this.btnValores.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnValores.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnValores.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnValores.Location = new System.Drawing.Point(537, 378);
+            this.btnValores.Location = new System.Drawing.Point(537, 412);
             this.btnValores.Name = "btnValores";
             this.btnValores.Size = new System.Drawing.Size(223, 46);
             this.btnValores.TabIndex = 4;
@@ -238,7 +238,7 @@
             this.btnIniciar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnIniciar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnIniciar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnIniciar.Location = new System.Drawing.Point(808, 378);
+            this.btnIniciar.Location = new System.Drawing.Point(808, 412);
             this.btnIniciar.Name = "btnIniciar";
             this.btnIniciar.Size = new System.Drawing.Size(132, 46);
             this.btnIniciar.TabIndex = 6;

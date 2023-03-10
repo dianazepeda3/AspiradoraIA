@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.panel2 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
@@ -42,8 +43,13 @@
             this.label1 = new System.Windows.Forms.Label();
             this.btnValores = new System.Windows.Forms.Button();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
+            this.lblBasura = new System.Windows.Forms.Label();
             this.lblCaract = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.btnIniciar = new System.Windows.Forms.Button();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.lblEstadoA = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picBox_Basura1)).BeginInit();
@@ -177,7 +183,7 @@
             this.btnValores.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnValores.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnValores.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnValores.Location = new System.Drawing.Point(643, 378);
+            this.btnValores.Location = new System.Drawing.Point(537, 412);
             this.btnValores.Name = "btnValores";
             this.btnValores.Size = new System.Drawing.Size(223, 46);
             this.btnValores.TabIndex = 4;
@@ -188,12 +194,33 @@
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.panel5.Controls.Add(this.lblBasura);
+            this.panel5.Controls.Add(this.lblEstadoA);
             this.panel5.Controls.Add(this.lblCaract);
+            this.panel5.Controls.Add(this.label7);
             this.panel5.Controls.Add(this.label2);
             this.panel5.Location = new System.Drawing.Point(38, 365);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(447, 71);
+            this.panel5.Size = new System.Drawing.Size(447, 144);
             this.panel5.TabIndex = 5;
+            // 
+            // lblBasura
+            // 
+            this.lblBasura.Location = new System.Drawing.Point(273, 43);
+            this.lblBasura.Name = "lblBasura";
+            this.lblBasura.Size = new System.Drawing.Size(147, 16);
+            this.lblBasura.TabIndex = 3;
+            this.lblBasura.Text = "--";
+            this.lblBasura.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblCaract
+            // 
+            this.lblCaract.Location = new System.Drawing.Point(50, 43);
+            this.lblCaract.Name = "lblCaract";
+            this.lblCaract.Size = new System.Drawing.Size(147, 16);
+            this.lblCaract.TabIndex = 2;
+            this.lblCaract.Text = "--";
+            this.lblCaract.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label2
             // 
@@ -205,21 +232,50 @@
             this.label2.TabIndex = 0;
             this.label2.Text = "Caracteristicas del Entorno";
             // 
-            // lblCaract
+            // btnIniciar
             // 
-            this.lblCaract.Location = new System.Drawing.Point(63, 43);
-            this.lblCaract.Name = "lblCaract";
-            this.lblCaract.Size = new System.Drawing.Size(337, 16);
-            this.lblCaract.TabIndex = 2;
-            this.lblCaract.Text = "--";
-            this.lblCaract.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnIniciar.BackColor = System.Drawing.Color.IndianRed;
+            this.btnIniciar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnIniciar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnIniciar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnIniciar.Location = new System.Drawing.Point(808, 412);
+            this.btnIniciar.Name = "btnIniciar";
+            this.btnIniciar.Size = new System.Drawing.Size(132, 46);
+            this.btnIniciar.TabIndex = 6;
+            this.btnIniciar.Text = "INICIAR";
+            this.btnIniciar.UseVisualStyleBackColor = false;
+            this.btnIniciar.Click += new System.EventHandler(this.button1_Click_1);
+            // 
+            // timer1
+            // 
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // lblEstadoA
+            // 
+            this.lblEstadoA.Location = new System.Drawing.Point(33, 112);
+            this.lblEstadoA.Name = "lblEstadoA";
+            this.lblEstadoA.Size = new System.Drawing.Size(387, 22);
+            this.lblEstadoA.TabIndex = 2;
+            this.lblEstadoA.Text = "--";
+            this.lblEstadoA.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(150, 78);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(144, 15);
+            this.label7.TabIndex = 0;
+            this.label7.Text = "Estado de Aspiradora";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.ClientSize = new System.Drawing.Size(1000, 461);
+            this.ClientSize = new System.Drawing.Size(1000, 531);
+            this.Controls.Add(this.btnIniciar);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.btnValores);
             this.Controls.Add(this.label1);
@@ -261,6 +317,12 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label lblCaract;
+        private System.Windows.Forms.Button btnIniciar;
+        private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Label lblBasura;
+        private System.Windows.Forms.Label lblEstadoA;
+        private System.Windows.Forms.Label label7;
     }
 }
+
 

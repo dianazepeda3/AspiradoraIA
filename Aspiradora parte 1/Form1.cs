@@ -16,7 +16,7 @@ namespace Aspiradora_parte_1
     {
         //int num = 0;
         int basura, aspiradora, costo=0;
-        string url = "C:\\Users\\diana\\OneDrive\\Escritorio\\8vo semestre\\Inteligencia Artificial\\Aspiradora-parte1\\img\\";
+        string url = "D:\\Edgarbanzo\\Documents\\INCO\\IA I\\Practica1\\Aspiradora-parte2\\AspiradoraIA\\img\\";
         Random random = new Random();
         
         public Form1()
@@ -113,6 +113,32 @@ namespace Aspiradora_parte_1
 
         }
 
+        private void progressBar1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label10_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel6_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click_2(object sender, EventArgs e)
+        {
+            progressBar_Battery.Value = 100;
+            costo = 0;
+        }
+
         private void button1_Click_1(object sender, EventArgs e)
         {
             timer1.Start(); // Funcion iniciar Timer            
@@ -184,6 +210,7 @@ namespace Aspiradora_parte_1
 
 
             }
+            progressBar_Battery.Value  = progressBar_Battery.Value - costo;
 
             
 

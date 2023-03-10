@@ -20,3 +20,14 @@ C:\Users\diana\OneDrive\Escritorio\8vo semestre\Inteligencia Artificial\Aspirado
 C:\Users\diana\OneDrive\Escritorio\8vo semestre\Inteligencia Artificial\Aspiradora-parte1\Aspiradora parte 1\obj\Debug\Aspiradora parte 1.csproj.CoreCompileInputs.cache
 C:\Users\diana\OneDrive\Escritorio\8vo semestre\Inteligencia Artificial\Aspiradora-parte1\Aspiradora parte 1\obj\Debug\Aspiradora parte 1.exe
 C:\Users\diana\OneDrive\Escritorio\8vo semestre\Inteligencia Artificial\Aspiradora-parte1\Aspiradora parte 1\obj\Debug\Aspiradora parte 1.pdb
+D:\Edgarbanzo\Documents\INCO\IA I\Practica1\Aspiradora-parte2\AspiradoraIA\Aspiradora parte 1\bin\Debug\Aspiradora parte 1.exe.config
+D:\Edgarbanzo\Documents\INCO\IA I\Practica1\Aspiradora-parte2\AspiradoraIA\Aspiradora parte 1\bin\Debug\Aspiradora parte 1.exe
+D:\Edgarbanzo\Documents\INCO\IA I\Practica1\Aspiradora-parte2\AspiradoraIA\Aspiradora parte 1\bin\Debug\Aspiradora parte 1.pdb
+D:\Edgarbanzo\Documents\INCO\IA I\Practica1\Aspiradora-parte2\AspiradoraIA\Aspiradora parte 1\obj\Debug\Aspiradora parte 1.csproj.AssemblyReference.cache
+D:\Edgarbanzo\Documents\INCO\IA I\Practica1\Aspiradora-parte2\AspiradoraIA\Aspiradora parte 1\obj\Debug\Aspiradora parte 1.csproj.SuggestedBindingRedirects.cache
+D:\Edgarbanzo\Documents\INCO\IA I\Practica1\Aspiradora-parte2\AspiradoraIA\Aspiradora parte 1\obj\Debug\Aspiradora_parte_1.Form1.resources
+D:\Edgarbanzo\Documents\INCO\IA I\Practica1\Aspiradora-parte2\AspiradoraIA\Aspiradora parte 1\obj\Debug\Aspiradora_parte_1.Properties.Resources.resources
+D:\Edgarbanzo\Documents\INCO\IA I\Practica1\Aspiradora-parte2\AspiradoraIA\Aspiradora parte 1\obj\Debug\Aspiradora parte 1.csproj.GenerateResource.cache
+D:\Edgarbanzo\Documents\INCO\IA I\Practica1\Aspiradora-parte2\AspiradoraIA\Aspiradora parte 1\obj\Debug\Aspiradora parte 1.csproj.CoreCompileInputs.cache
+D:\Edgarbanzo\Documents\INCO\IA I\Practica1\Aspiradora-parte2\AspiradoraIA\Aspiradora parte 1\obj\Debug\Aspiradora parte 1.exe
+D:\Edgarbanzo\Documents\INCO\IA I\Practica1\Aspiradora-parte2\AspiradoraIA\Aspiradora parte 1\obj\Debug\Aspiradora parte 1.pdb
